@@ -37,3 +37,7 @@ firebase.initializeApp(config);
 
 - firebase-app.js ([CDN](https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js))
 - firebase-firestore.js ([CDN](https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js))
+
+## Use Cases
+
+[Hackernoon](https://hackernoon.com) - We need to optimize the performance of images in our library. In order to do this, we need to iterate through thousands of previously published stories and measure the width and height of each image in the story. By knowing the width and height, we can take advantage of [lazy loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) to initially load the story pages without images. There are certainly a lot of solutions to this problem but some of the pure backend solutions using Puppeteer and Node.js have been problematic. So, I've written scripts to measure images from the client side using a Chrome Extension. It's a hack, but it works.
